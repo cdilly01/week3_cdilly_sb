@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NotesSvc.h"
 
-@interface NotesSvcCache : NSObject <NotesSvc>
+@interface NoteSvcCache : NSObject <NotesSvc>
 
 
 

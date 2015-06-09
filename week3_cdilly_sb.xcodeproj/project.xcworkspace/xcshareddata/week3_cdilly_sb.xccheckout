@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4A17C107-EF72-42EF-A75D-7B12F71096AA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>week3_cdilly_sb</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0ACCC0BB7D29FC6A14C09600658C7E3C0992A0DB</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/cdilly01/NoteToSelf_cdilly_new.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week3_cdilly_sb.xcodeproj/project.xcworkspace</string>
+	<string>week3_cdilly_sb.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0ACCC0BB7D29FC6A14C09600658C7E3C0992A0DB</key>

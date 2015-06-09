@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    noteSvcCache = [[NoteSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,4 +56,32 @@
     [self.tableView reloadData];
     NSLog(@"deleteNote: note deleted");
 }
+
+// Return the number of notes
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[noteSvcCache retrieveAllNotes] count];
+}
+
+// Return the table cell for a paricular row (index)
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+            reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    Note *note = [[noteSvcCache retrieveAllNotes]
+                  objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [note description];
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
+    
+    return cell;
+}
+
 @end

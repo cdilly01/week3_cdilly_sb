@@ -12,7 +12,6 @@
 		E7A565CB1B26C37F009C57AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565CA1B26C37F009C57AA /* ViewController.m */; };
 		E7A565CE1B26C37F009C57AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A565CC1B26C37F009C57AA /* Main.storyboard */; };
 		E7A565D01B26C37F009C57AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A565CF1B26C37F009C57AA /* Images.xcassets */; };
-		E7A565D31B26C37F009C57AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A565D11B26C37F009C57AA /* LaunchScreen.xib */; };
 		E7A565DF1B26C37F009C57AA /* week3_cdilly_sbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565DE1B26C37F009C57AA /* week3_cdilly_sbTests.m */; };
 		E7A565EC1B26C50D009C57AA /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565EA1B26C50D009C57AA /* Note.m */; };
 		E7A565F21B27914E009C57AA /* NoteSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565F11B27914E009C57AA /* NoteSvcCache.m */; };
@@ -38,7 +37,6 @@
 		E7A565CA1B26C37F009C57AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7A565CD1B26C37F009C57AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7A565CF1B26C37F009C57AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E7A565D21B26C37F009C57AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E7A565D81B26C37F009C57AA /* week3_cdilly_sbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = week3_cdilly_sbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A565DD1B26C37F009C57AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A565DE1B26C37F009C57AA /* week3_cdilly_sbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = week3_cdilly_sbTests.m; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				E7A565CA1B26C37F009C57AA /* ViewController.m */,
 				E7A565CC1B26C37F009C57AA /* Main.storyboard */,
 				E7A565CF1B26C37F009C57AA /* Images.xcassets */,
-				E7A565D11B26C37F009C57AA /* LaunchScreen.xib */,
 				E7A565C21B26C37F009C57AA /* Supporting Files */,
 			);
 			path = week3_cdilly_sb;
@@ -220,7 +217,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7A565CE1B26C37F009C57AA /* Main.storyboard in Resources */,
-				E7A565D31B26C37F009C57AA /* LaunchScreen.xib in Resources */,
 				E7A565D01B26C37F009C57AA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,14 +268,6 @@
 				E7A565CD1B26C37F009C57AA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E7A565D11B26C37F009C57AA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7A565D21B26C37F009C57AA /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -438,6 +426,7 @@
 				E7A565E41B26C37F009C57AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A565E51B26C37F009C57AA /* Build configuration list for PBXNativeTarget "week3_cdilly_sbTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +435,7 @@
 				E7A565E71B26C37F009C57AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

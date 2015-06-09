@@ -8,7 +8,7 @@
 
 #import "NoteSvcCache.h"
 
-@implementation NotesSvcCache
+@implementation NoteSvcCache
 
 NSMutableArray *notes = nil;
 
