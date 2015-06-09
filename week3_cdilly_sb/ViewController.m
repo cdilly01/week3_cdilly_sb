@@ -31,50 +31,28 @@ NoteSvcCache *noteSvcCache = nil;
 // Save Note
 - (IBAction)addNote:(id)sender {
     [self.view endEditing:YES];
-    
-    // get array of notes
-    NSMutableArray *notes = [noteSvcCache retrieveAllNotes];
-    
+ 
     // instantiate new note with sender note
     Note *note = [[Note alloc] init];
     note.noteText = _noteInputText.text;
     
-    // find index...
-    NSUInteger index = [notes indexOfObject: note ];
-    
-    // add note if doesn't exist
-    if (index == NSNotFound){
-        NSLog(@"saveNote: adding new note");
-        [noteSvcCache createNote:note];
-    }
-    else{
-        // if note exists, delete then add
-        [notes removeObjectAtIndex: index];
-        NSLog(@"deleteNote: note deleted");
-        
-        // now add...
-        NSLog(@"saveNote: adding new note");
-    }
+    [noteSvcCache createNote:note];
     
     [self.tableView reloadData];
     NSLog(@"saveNote: note saved");
 }
 
+// Delete Note
 - (IBAction)deleteNote:(id)sender {
     NSLog(@"deleteNote");
-    
-    // get array of notes
-    NSMutableArray *notes = [noteSvcCache retrieveAllNotes];
     
     // instantiate new note with sender note
     Note *note = [[Note alloc] init];
     note.noteText = _noteInputText.text;
-    NSUInteger index = [notes indexOfObject: note ];
     
-    if (index != NSNotFound){
-        [notes removeObjectAtIndex: index];
-        [self.tableView reloadData];
-        NSLog(@"deleteNote: note deleted");
-    }
+    [noteSvcCache deleteNote:note];
+    
+    [self.tableView reloadData];
+    NSLog(@"deleteNote: note deleted");
 }
 @end
