@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-NoteSvcCache *noteSvcCache = nil;
+ NoteSvcCache *noteSvcCache = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +36,7 @@ NoteSvcCache *noteSvcCache = nil;
     Note *note = [[Note alloc] init];
     note.noteText = _noteInputText.text;
     
-    [noteSvcCache createNote:note];
+    [noteSvcCache addNote:note];
     
     [self.tableView reloadData];
     NSLog(@"saveNote: note saved");

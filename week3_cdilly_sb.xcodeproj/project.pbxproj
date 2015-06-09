@@ -15,7 +15,7 @@
 		E7A565D31B26C37F009C57AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A565D11B26C37F009C57AA /* LaunchScreen.xib */; };
 		E7A565DF1B26C37F009C57AA /* week3_cdilly_sbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565DE1B26C37F009C57AA /* week3_cdilly_sbTests.m */; };
 		E7A565EC1B26C50D009C57AA /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565EA1B26C50D009C57AA /* Note.m */; };
-		E7A565EE1B26C665009C57AA /* NoteSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565ED1B26C665009C57AA /* NoteSvcCache.m */; };
+		E7A565F21B27914E009C57AA /* NoteSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A565F11B27914E009C57AA /* NoteSvcCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,9 @@
 		E7A565DE1B26C37F009C57AA /* week3_cdilly_sbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = week3_cdilly_sbTests.m; sourceTree = "<group>"; };
 		E7A565E91B26C50D009C57AA /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = ../../NoteToSelf_cdilly_new/NoteToSelf_cdilly/Note.h; sourceTree = "<group>"; };
 		E7A565EA1B26C50D009C57AA /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = ../../NoteToSelf_cdilly_new/NoteToSelf_cdilly/Note.m; sourceTree = "<group>"; };
-		E7A565ED1B26C665009C57AA /* NoteSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteSvcCache.m; path = ../../NoteToSelf_cdilly_new/NoteToSelf_cdilly/NoteSvcCache.m; sourceTree = "<group>"; };
-		E7A565EF1B26C67F009C57AA /* NoteSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteSvcCache.h; path = ../../NoteToSelf_cdilly_new/NoteToSelf_cdilly/NoteSvcCache.h; sourceTree = "<group>"; };
+		E7A565EF1B26C67F009C57AA /* NotesSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesSvc.h; path = ../../NoteToSelf_cdilly_new/NoteToSelf_cdilly/NotesSvc.h; sourceTree = "<group>"; };
+		E7A565F01B279027009C57AA /* NoteSvcCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteSvcCache.h; sourceTree = "<group>"; };
+		E7A565F11B27914E009C57AA /* NoteSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +130,11 @@
 		E7A565E81B26C4E7009C57AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E7A565EF1B26C67F009C57AA /* NoteSvcCache.h */,
-				E7A565ED1B26C665009C57AA /* NoteSvcCache.m */,
+				E7A565EF1B26C67F009C57AA /* NotesSvc.h */,
 				E7A565E91B26C50D009C57AA /* Note.h */,
 				E7A565EA1B26C50D009C57AA /* Note.m */,
+				E7A565F01B279027009C57AA /* NoteSvcCache.h */,
+				E7A565F11B27914E009C57AA /* NoteSvcCache.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -238,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7A565CB1B26C37F009C57AA /* ViewController.m in Sources */,
-				E7A565EE1B26C665009C57AA /* NoteSvcCache.m in Sources */,
+				E7A565F21B27914E009C57AA /* NoteSvcCache.m in Sources */,
 				E7A565C81B26C37F009C57AA /* AppDelegate.m in Sources */,
 				E7A565C51B26C37F009C57AA /* main.m in Sources */,
 				E7A565EC1B26C50D009C57AA /* Note.m in Sources */,

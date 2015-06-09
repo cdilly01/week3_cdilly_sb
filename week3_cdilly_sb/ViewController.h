@@ -13,6 +13,7 @@
 
 - (IBAction)addNote:(id)sender;
 - (IBAction)deleteNote:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
